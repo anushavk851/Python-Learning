@@ -1,0 +1,5 @@
+#find perimeter of a rectangle(2(l+b))
+  l=int(input("enter a length:" ))
+  w=int(input("enter a width:" ))
+  perimeter=2*(l+w)
+  print("perimeter of rectangle is ", perimeter)
