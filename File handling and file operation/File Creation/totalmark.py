@@ -13,19 +13,10 @@
 # with open("marks.txt","x") as f:
 #     pass
 
-# with open("marks.txt","a") as f:
-#     m1=input()
-#     m2=input()
-#     m3=input()
-#     m4=input()
-#     m5=input()
-#     f.write(m1+"\n")
-#     f.write(m2+"\n")
-#     f.write(m3+"\n")
-#     f.write(m4+"\n")
-#     f.write(m5+"\n")
-# with open("marks.txt","r") as f:
-#     f.read()
+# with open("marks.txt","w") as f:
+#     for i in range(5):
+#         mark = input("Enter mark: ")
+#         f.write(mark + "\n")
 
 with open("marks.txt","r") as f:
     lst=[]
@@ -48,3 +39,8 @@ with open("marks.txt","r") as f:
             lowest=i
     print("highest mark is: ",highest)
     print("lowest mark is: ",lowest)
+
+
+
+
+    
