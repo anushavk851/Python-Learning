@@ -1,0 +1,43 @@
+#employees promotion
+ # Create a Python program using Object-Oriented Programming (OOP) that includes a class called Employee
+ # attributes- id, name, age, designation, experience (in years), and salary.
+ # The class should include methods to display employee details and update the designation.
+ # method to check promotion eligibility where an employee is eligible for promotion if experience is 5 years or more and age is above 30;
+ # otherwise, the employee is not eligible.
+ # Create at least one object of the Employee class, assign values directly, and display all the details along with promotion eligibility result.
+
+class Employee:
+    def __init__(self,id,name,age,designation,experience,salary):
+        self.id=id
+        self.name=name
+        self.age=age
+        self.designation=designation
+        self.experience=experience
+        self.salary=salary
+    def employee_details(self):
+        print("employee id:",self.id)
+        print("employee name:",self.name)
+        print("age:",self.age)
+        print("designation:",self.designation)
+        print("experience:",self.experience,"years")
+        print("salary:",self.salary)
+
+    def designation_update(self):
+        new_designation=input("enter the updated designation: ")
+        if self.designation==new_designation:
+            print("designation already same")
+        else:
+            self.designation=new_designation
+            print("designation updated successfully")
+
+    def promotion_eligibility(self):
+        if self.experience>=5 and self.age>30:
+            print("Eligible for promotion")
+        else:
+            print("Not eligible")
+
+e1=Employee(101,"anu",31,"software engineer",5,25000)
+e1.employee_details()
+e1.designation_update()
+e1.promotion_eligibility()
+e1.employee_details()
